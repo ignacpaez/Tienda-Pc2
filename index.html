@@ -1,0 +1,58 @@
+<!-- bxSlider CSS file -->
+<link href="jquery.bxslider.css" rel="stylesheet" />
+
+<ul class="bxslider">
+  <li><img src="images/imag3.jpg" /></li>
+  <li><img src="images/imag5.jpg" /></li>
+  <li><img src="images/imag25.jpg" /></li>
+  <li><img src="images/imag4.jpg" /></li>
+  <li><img src="images/imag6.jpg" /></li>
+  <li><img src="images/imag8.jpg" /></li>
+  <li><img src="images/imag9.jpg" /></li>
+</ul>
+
+<nav class="naveg">
+	<ul>
+	  <li> <a href="index.html"> Inicio    </a> </li>
+	  <li> <a href="producto.html"> Productos </a> </li>
+	  <li> <a href="formulario.html"> Formulario   </a> </li>
+	  
+	</ul>
+</nav>
+
+<p> 
+<img src="images/imag7.jpg" width="400px" align="left">Aquí podras comprar y comparar entre los diversos componentes con precios a la medida con computadores ya armados 
+														a elección de nosotros, contando con garantia de hasta 2 años en la variedad de nuestros productos.
+														
+														Contamos con mas de 10 tiendas a lo largo del pais con una buena puntancion entre las opiniones de nuestros compradores.
+														
+														
+</p>
+<p> ---Nuestra casa matriz, ubicada en Padre Mariano n° 391 (Metro Pédro de Valdivia)---</p>
+<p>--Horarios de 10:30 a 14:00, 14:30 a 19:00--</p>
+
+<style>
+body{
+background-color:#464241;
+}
+</style>
+
+<!-- jQuery library -->
+<script src="jquery-3.1.1.min.js"></script>
+<!-- bxSlider Javascript file -->
+<script src="jquery.bxslider.js"></script>
+<script>
+	$(document).ready(function(){
+		$('.bxslider').bxSlider({
+			mode: 'horizontal',
+			moveSlides: 1,
+			slideMargin: 40,
+			infiniteLoop: true,
+			slideWidth: 660,
+			minSlides: 3,
+			maxSlides: 3,
+			speed: 800,
+		});
+	});
+	
+</script>

@@ -1,0 +1,111 @@
+
+<!-- bxSlider CSS file -->
+<link href="jquery.bxslider.css" rel="stylesheet" />
+<script src="jsform/validacion.js"></script>
+<link rel="stylesheet" href="css/estilo.css"/>
+
+
+<ul class="bxslider">
+  <li><img src="images/imag3.jpg" /></li>
+  <li><img src="images/imag5.jpg" /></li>
+  <li><img src="images/imag25.jpg" /></li>
+  <li><img src="images/imag4.jpg" /></li>
+  <li><img src="images/imag6.jpg" /></li>
+  <li><img src="images/imag8.jpg" /></li>
+  <li><img src="images/imag9.jpg" /></li>
+</ul>
+
+<nav class="naveg">
+	<ul>
+	  <li> <a href="index.html"> Inicio    </a> </li>
+	  <li> <a href="producto.html"> Productos </a> </li>
+	  <li> <a href="formulario.html"> Formulario   </a> </li>
+	  
+	</ul>
+</nav>
+
+<div>
+<p>
+
+
+</div>
+
+<div id="formulario">
+    <form name="form2" id="form2" method="get" action="#" onsubmit="return valida();" enctype="text/plain">
+    	<p>Compra de equipos</p>
+    	<hr>
+	   <div>
+	     <label class="label" for="rutCliente"> Rut Cliente: </label>
+		 <input type="text" name="rutCliente" id="rutCliente" />
+	   </div>
+	   <div>
+	     <label class="label" for="nombreCliente"> Nombre Cliente: </label>
+		 <input type="text" name="nombreCliente" id="nombreCliente" />
+	   </div>
+	    <div>
+	   <label class="label" for="equipo">Equipo:</label>
+	   <select name="equipo" id="equipo">
+	   <option value="0">Seleccione</option>
+	   <option value="1">--Intel--</option>
+	   <option value="2">Intel Core i7 ($400.000)</option>
+	   <option value="3">Intel NUC ($290.000)</option>
+	   <option value="4">--AMD--</option>
+	   <option value="5">Ryzen 5 1600X ($400.000)</option>
+	   <option value="6">AMD RYZEN 5 2600X ($800.000)</option>
+	   <option value="7">AMD Ryzen 7 2700x ($490.000)</option>
+	   <option value="8">Ryzen 5 1600X ($400.000)</option>
+	   
+	   
+	</select>
+	     </div>
+	     <div>
+	   <label class="label" for="formaPago">Forma de Pago:</label>
+	   <select name="formaPago" id="formaPago">
+	   <option value="0">Seleccione</option>
+	   <option value="1">Efectivo</option>
+	   <option value="2">Cheque</option>
+	   <option value="3">Tarjeta de credito</option>
+	</select>
+	     </div>
+		 <div>
+			<label class="label" for="preciof"> Precio:</label>
+			<label class="label" name="preciof "id="preciof"> </label>
+		 </div>
+	   <div>
+	     <label class="label" for="comentario"> Comentario: </label>
+		 <textarea type="text" name="comentario" id="observacion"></textarea>
+	   </div>   
+	</fieldset>
+	<div class="centro">
+	     <input type="submit" name="btnEnviar" id="btnEnviar" value="Pagar" />
+		 <input type="reset" name="btnRestablecer" id="btnRestablecer" value="Restablecer" />
+	   </div>
+	</form>
+</div>
+
+
+<style>
+body{
+background-color:#464241;
+}
+</style>
+
+<!-- jQuery library -->
+<script src="jquery-3.1.1.min.js"></script>
+<!-- bxSlider Javascript file -->
+<script src="jquery.bxslider.js"></script>
+<script>
+	$(document).ready(function(){
+		$('.bxslider').bxSlider({
+			mode: 'horizontal',
+			moveSlides: 1,
+			slideMargin: 40,
+			infiniteLoop: true,
+			slideWidth: 660,
+			minSlides: 3,
+			maxSlides: 3,
+			speed: 800,
+		});
+	});
+	
+</script>

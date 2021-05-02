@@ -1,0 +1,80 @@
+<!-- bxSlider CSS file -->
+<link href="jquery.bxslider.css" rel="stylesheet" />
+<link rel="stylesheet" href="css/lightbox.min.css">
+
+<ul class="bxslider">
+  <li><img src="images/imag3.jpg" /></li>
+  <li><img src="images/imag5.jpg" /></li>
+  <li><img src="images/imag25.jpg" /></li>
+  <li><img src="images/imag4.jpg" /></li>
+  <li><img src="images/imag6.jpg" /></li>
+  <li><img src="images/imag8.jpg" /></li>
+  <li><img src="images/imag9.jpg" /></li>
+</ul>
+
+<nav class="naveg">
+	<ul>
+	  <li> <a href="index.html"> Inicio    </a> </li>
+	  <li> <a href="productos.html"> Productos </a> </li>
+	  <li> <a href="formulario.html"> Formulario   </a> </li>
+	  
+	</ul>
+</nav>
+
+<section>
+    <h3 style="color:#0F99B4">--Intel--</h3>
+    <div>
+		<a class="example-image-link" href="images/pc1.jpg" data-lightbox="grupo_imagen1" data-title="Core i7-8700K, Asus ROG Crosshair VII Hero con 16GB de DDR4-3400, (Precio $400.000)">
+			<img class="example-image" width="400px" src="images/pc1.jpg" alt="" />
+		</a>
+		<a class="example-image-link" href="images/pc2intel.jpg" data-lightbox="grupo_imagen1" data-title="Intel NUC Core i5 Mini Pc,  Intel HD Graphics 620, 4GB DDR4, Almacenamiento 500GB Windows 10 pro. (Precio $290.000)">
+			<img class="example-image" width="400px"  height="220px" src="images/pc2intel.jpg" alt="" />
+		</a>
+    </div>
+
+    <br />
+
+    <h3 style="color:#D80B27">--AMD--</h3>
+    <div>
+		<a class="example-image-link" href="images/pc1amd.jpg" data-lightbox="grupo_imagen2" data-title="Ryzen 5 1600X, Gigabyte Aorus AX370-Gaming, Geil’s Evo X 16GB DDR4, Nvidia GeForce GTX 1070 Founders Edition. (Precio $400.000)">
+			<img class="example-image"width="400px" src="images/pc1amd.jpg" alt=""/>
+		</a>
+		<a class="example-image-link" href="images/pc2amd.jpg" data-lightbox="grupo_imagen2" data-title="AMD RYZEN 5 2600X, TUFF Gaming 450 Plus, Night Corssair RGB DDR4 16GB, Toshiba HDD 1TB, Cooler Master 650 W mwe 80+ Bronze, Cooler master MOSTERBOX lite 5 Edition RGB. (Precio $800.000)">
+			<img class="example-image" width="400px" src="images/pc2amd.jpg" alt="" />
+		</a>
+		<a class="example-image-link" href="images/pc3amd.jpg" data-lightbox="grupo_imagen2" data-title="AMD Ryzen 7 2700x, ASUS PRIME X470-PRO, G.Skill 16GB (8x2), Palit GeForce GTX1060 6GB DUAL, Samsung SSD 250GB, Thermaltake View31 Case, Corsair AX860 80 PLUS Platinum.  (Precio $490.000)">
+			<img class="example-image"width="400px" height="220px" src="images/pc3amd.jpg" alt=""/>
+		</a>
+		<a class="example-image-link" href="images/pc4amd.jpg" data-lightbox="grupo_imagen2" data-title="Ryzen 5 1600X, Gigabyte Aorus AX370-Gaming, Geil’s Evo X 16GB DDR4, Nvidia GeForce GTX 1070 Founders Edition. (Precio $400.000)">
+			<img class="example-image"width="400px" height="200px" src="images/pc4amd.jpg" alt=""/>
+		</a>
+    </div>
+  </section>
+  
+  <script src="js/lightbox-plus-jquery.min.js"></script>
+
+<style>
+body{
+background-color:#464241;
+}
+</style>
+
+<!-- jQuery library -->
+<script src="jquery-3.1.1.min.js"></script>
+<!-- bxSlider Javascript file -->
+<script src="jquery.bxslider.js"></script>
+<script>
+	$(document).ready(function(){
+		$('.bxslider').bxSlider({
+			mode: 'horizontal',
+			moveSlides: 1,
+			slideMargin: 40,
+			infiniteLoop: true,
+			slideWidth: 660,
+			minSlides: 3,
+			maxSlides: 3,
+			speed: 800,
+		});
+	});
+	
+</script>
